@@ -70,37 +70,17 @@
 		<url>https://github.com/asterisk-java/asterisk-java</url>
 	</scm>
 	<distributionManagement>
-		<snapshotRepository>
-			<id>ossrh</id>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
-		</snapshotRepository>
 		<repository>
-			<id>ossrh</id>
-			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+			<id>maven-simcom</id>
+			<url>https://maven.ucp.no/repository/maven-simcom/</url>
 		</repository>
 	</distributionManagement>
-	<issueManagement>
-		<system>GitHub</system>
-		<url>https://github.com/asterisk-java/asterisk-java/issues</url>
-	</issueManagement>
-	<mailingLists>
-		<mailingList>
-			<name>Asterisk-Java User List</name>
-			<subscribe>http://lists.sourceforge.net/mailman/listinfo/asterisk-java-users</subscribe>
-			<unsubscribe>http://lists.sourceforge.net/mailman/listinfo/asterisk-java-users</unsubscribe>
-			<archive>http://sourceforge.net/mailarchive/forum.php?forum=asterisk-java-users</archive>
-		</mailingList>
-		<mailingList>
-			<name>Asterisk-Java Developer List</name>
-			<subscribe>http://lists.sourceforge.net/mailman/listinfo/asterisk-java-devel</subscribe>
-			<unsubscribe>http://lists.sourceforge.net/mailman/listinfo/asterisk-java-devel</unsubscribe>
-			<archive>http://sourceforge.net/mailarchive/forum.php?forum=asterisk-java-devel</archive>
-		</mailingList>
-	</mailingLists>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<buildDirectory>${project.basedir}/target</buildDirectory>
 	</properties>
 	<build>
+	        <directory>${buildDirectory}</directory>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
