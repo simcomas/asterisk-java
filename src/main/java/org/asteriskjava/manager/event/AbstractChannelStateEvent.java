@@ -18,7 +18,7 @@ package org.asteriskjava.manager.event;
 
 /**
  * Abstract base class providing common properties for HangupEvent,
- * NewChannelEvent and NewStateEvent.
+ * NewChannelEvent, NewStateEvent and PickupEvent.
  *
  * @author srt
  * @version $Id$
